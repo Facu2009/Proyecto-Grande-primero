@@ -58,7 +58,56 @@ fun PositivoNegativo(){
     }
 }
 
+fun mostrarNumerosConLoops() {
+    println("Usando for:")
+    for (i in 1..10) {
+        println(i)
+    }
+
+    println("\nUsando while:")
+    var j = 1
+    while (j <= 10) {
+        println(j)
+        j++
+    }
+
+    println("\nUsando do-while:")
+    var k = 1
+    do {
+        println(k)
+        k++
+    } while (k <= 10)
+}
+
+
+fun mostrarNumerosPares() {
+    println("Usando for:")
+    for (i in 1..10) {
+        if (i % 2 == 0) { 
+            println(i)
+        }
+    }
+    
+    println("\nUsando while:")
+    var j = 1
+    while (j <= 10) {
+        if (j % 2 == 0) { 
+            println(j)
+        }
+        j++
+    }
+    
+    println("\nUsando do-while:")
+    var k = 1
+    do {
+        if (k % 2 == 0) { 
+            println(k)
+        }
+        k++
+    } while (k <= 10)
+}
+
 
 fun main() {
-    PositivoNegativo()
+    mostrarNumerosPares()
 }
