@@ -9,7 +9,7 @@ class App {
             return "Hello World!"
         }
 }
-/*
+
 fun NombreEdad(){
     val nombre: String = "Facu"
     val edad: Int = 16
@@ -29,7 +29,7 @@ fun mostrarTiposDeDatos() {
     println("Altura: $altura")
     println("Es estudiante: $esEstudiante")
 }
-*/
+
 fun triangulorec(){
     val base: Double = 5.8
     val altura: Double = 3.7
@@ -79,6 +79,7 @@ fun mostrarNumerosConLoops() {
     } while (k <= 10)
 }
 
+//PASO 4:
 
 fun mostrarNumerosPares() {
     println("Usando for:")
@@ -88,7 +89,7 @@ fun mostrarNumerosPares() {
         }
     }
     
-    println("\nUsando while:")
+    println("Usando while:")
     var j = 1
     while (j <= 10) {
         if (j % 2 == 0) { 
@@ -107,7 +108,24 @@ fun mostrarNumerosPares() {
     } while (k <= 10)
 }
 
+//PASO 5: 
+
+fun factorial(n: Int): Int {
+    return if (n <= 1) 1 else n * factorial(n - 1)
+}
+
+fun saludar(nombre: String, edad: Int = 0) {
+    println("Hola $nombre, tienes $edad años")
+}
+
+fun elevarExponente() {
+    val base2: Int = 2
+    val exponente2: Int = 2
+
+    val resultado = Math.pow(base2.toDouble(), exponente2.toDouble())
+    println("La potencia es: $resultado")
+}
 
 fun main() {
-    mostrarNumerosPares()
+    elevarExponente()
 }
