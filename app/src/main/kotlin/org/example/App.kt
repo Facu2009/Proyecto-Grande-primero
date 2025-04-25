@@ -126,6 +126,7 @@ fun elevarExponente() {
     println("La potencia es: $resultado")
 }
 
+
 fun main() {
     elevarExponente()
 }
